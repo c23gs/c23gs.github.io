@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<style type="text/css">
+				#image{
+			width:700px;
+			height:400px;
+			background-color: pink;
+			background-image: url(sagesketch.png);
+
+
+			
+
+
+
+	</style></head>
+		}
+<body>
+
+	<div id="image">
+	</div>
+
+
+
+</body>
+</html>

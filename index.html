@@ -1,64 +1,80 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	  
-	<style type="text/css">
-		#image1{
-			width:700px;
-			height:400px;
-			background-color: pink;
-			background-image: url(https://media1.giphy.com/media/LYRT0ChB4CGnm/giphy.gif);
-			display: inline-block;
+
+	<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+	<title>code journal</title>
+	<style> 
+
+		a{
+			text-decoration:none;
+			color: rgb(143,188,143);
+font-family: 'Bebas Neue', cursive;
 		}
-
-		#image1:hover{
-			transition: 1s;
-			background-image: url(https://66.media.tumblr.com/58232df1b4df44c61bfd795b54cf3312/tumblr_mj8rewwcCH1qi3yn4o1_400.gifv);}
-
-			#text{
-				color: red;
-			}
-
-			#image2{
-				width: 500px;
-				height:400px;
-				background-image: url(https://media2.giphy.com/media/5T06ftQWtCMy0XFaaI/giphy.gif);
-				display:inline-block;
-				/*position: relative;*/
-			}
-
-	
-
-	</style>
+	#menu {
+		height:800px;
+		width:15%;
+		background-color: lightcyan;
+		position:fixed;
+		font-size:40px;
+		z-index: 1;
+		padding-left:10px;
+	}
+		
+	body {
+		margin:0;
 
 
+	}
+
+	section {
+		background-color: rgba(138, 43, 226);
+		opacity: 0.5;
+		width:100%;
+		height:800px;
+		position:absolute;
+		border:dotted;
+		font-color:white;
+		font-size:100px;
+
+	}
+
+	#first-page{
+		top:0%;
+		z-index:0;
+	}
+
+	#second-page{
+		top:800px;
+		
+	}
+
+	#text-box{
+		width:80%;
+		background-color:purple;
+		position:relative;
+		left:20%;
+		padding:10px;
+
+	}
+		</style>
 </head>
 <body>
-
-	<center id="text">cute</center>
-
-	<center id="text">puppies</center>
-
-	<div id="image1">
+	<div id="menu">
 		
+		<a href="puppy.html">puppy</a>
+		<br>
+		<a href="mom-bdaycard.html">card</a>
+		<br>
+		<a href="journal.html">Journal</a>
+
+
 	</div>
-
-	<div id="image2"></div>
-
-
-	<script type="text/javascript">
-		
-		
-		// image2.style.opacity = "0"
-		// document.getElementById("image").addEventListener("click", function(){
-		// 	var image2 = document.getElementById("image2")
-		// 	image2.style.opacity = "100"
-		// )};
-var image2 = document.getElementById("image2")
-		document.getElementById("image").addEventListener("click", function() {
-  showImg(image2);
-});
-	</script>
-
+	<section id="first-page">
+	</section>
+	<section id="second-page"></section>
 </body>
+	
 </html>

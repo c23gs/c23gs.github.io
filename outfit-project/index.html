@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>outfit picker</title>
+
+    <style type="text/css">
+    	#container
+    	{
+    		width:600px;
+    		height:780px;
+    		border:black solid 2px;
+    	}
+    	   #tops{
+    		width: 700px;
+    		height:390px;
+    		position: relative;
+    		top:0%;
+/*    		background-color: pink;
+*/    		background-size:contain;
+		background-repeat: no-repeat;
+		background-image: url("https://imgprod65.hobbylobby.com/7/25/da/725dac5cb230bac61539fb9a13aa5e58120c3ed4/350Wx350H-105437-0918.jpg"); 
+    	}
+    	#bottoms{
+    		width:700px;
+    		height: 390px;
+    		position: absolute;
+    		top:60%;
+    		background-size:contain;
+    		background-repeat: no-repeat;
+    		background-image: url("https://imgprod65.hobbylobby.com/7/25/da/725dac5cb230bac61539fb9a13aa5e58120c3ed4/350Wx350H-105437-0918.jpg");
+    	}
+
+
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="clothes" id="tops">
+        </div>
+        <div class="clothes" id="bottoms">
+        </div>
+    </div>
+    <script type="text/javascript">
+    	var counter=-1;
+    	var shirts=["top1.png","top2.png","top3.png","top4.png","top5.png","top6.png","top7.png"];
+    	var pants=["bottom1.png","bottom2.png","bottom3.png","bottom4.png","bottom5.png","bottom6.png"];
+
+    	var torso=document.getElementById("tops");
+    	var tushy=document.getElementById("bottoms");
+
+
+    	function pickshirt(){
+    		console.log(counter);
+
+    		if (counter>=6){counter=-1}
+    			else
+
+
+    			{counter=counter+1;
+
+    			torso.style.backgroundImage="url("+shirts[counter]+")";}
+    	};
+
+    	torso.addEventListener("click",pickshirt);
+
+    	function pickpant(){
+    		console.log(counter);
+    		if (counter>=5){counter=-1}
+    			else
+
+    			{counter=counter+1
+    			tushy.style.backgroundImage="url("+pants[counter]+")";}
+    	}; 
+
+    	tushy.addEventListener("click",pickpant);
+    </script>
+
+</body>
+
+</html>
